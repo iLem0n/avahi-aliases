@@ -102,10 +102,10 @@ class AvahiAliases:
 
         for cname in self.aliases:
             cname = unicode(cname, locale.getpreferredencoding())
-            print "Announcing", cname
+            print("Announcing", cname)
             self.publish(cname)
 
-        print "Announced all aliases"
+        print("Announced all aliases")
 
         while True:
             time.sleep(Settings.TTL)
